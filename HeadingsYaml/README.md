@@ -1,6 +1,22 @@
 # Export section headings as Yaml
 
-This template is intended to export all pages to a single file.
+**WARNING**:This template is intended to export all pages to a single file.
+
+Exports a notebook or a section to a yaml document. Each page takes the
+following form:
+
+    "Page full name":
+      "headings":
+        - List of headings
+      "links":
+        - List of outgoing links
+      "backlinks":
+        - List of inbound links
+      "attachments":
+        - List of attachment names
+      "meta":
+        - List of meta attributes
+
 
 ## Usage
 
@@ -15,6 +31,10 @@ This template is intended to export all pages to a single file.
 
 ## Caveats
 
+### The zim export may end prematurely
+
+The export ends when encounters a page without headings or when there is any text before the first heading.
+
 ### Wrong format name
 
 The Zim 0.68 GUI doesn't recognize directory names as format names.
@@ -27,5 +47,6 @@ Although the attachments names are listed in the yaml file, their contents
 will be copied to a directory structure mirroring the original one in the Zim notebook
 and not referenced directly.
 
-If the attachments are relevant to your export, additional steps are necessary.
+If the attachments are relevant to your export, additional steps are 
+necessary to take them into account.
 
