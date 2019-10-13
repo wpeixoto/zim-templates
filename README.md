@@ -6,7 +6,7 @@ Zim-wiki templates for exporting notebooks into another formats, beside websites
 The templates must be placed in a convenient place in the local computer and then Zim must be told do use one of them during an [export operation](https://zim-wiki.org/manual/Help/Export.html).
 ### Where to save the templates?
 Zim will by default search for templates in the following directories:
-- `/usr/share/zim/templates/
+- `/usr/share/zim/templates/`
 - `~/.local/share/zim/templates`
 
 The template can also be specified in the command line.
@@ -27,4 +27,4 @@ At least until 0.68, the GUI shows only five formats to choose: HTML, MHTML (Web
 
 #### From command line
 
-    zim --export --output=OUT_PATH --format=SEE_ABOVE --template=PATH_TO_TEMPLATE Notebook
+    zim --export --singlefile --recursive [--overwrite] --output=OUT_PATH --format=SEE_ABOVE --template=NAME_OR_PATH_TO_TEMPLATE Notebook
