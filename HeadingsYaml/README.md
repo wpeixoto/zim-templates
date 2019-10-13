@@ -35,7 +35,7 @@ following form:
 
 The export ends abruptly in some cases:
 - when encounters a page without headings or when there is any text before the first heading
-- when there are regexp strings in an article body
+- when there are control characters in page body
 
 ### Wrong format name
 
