@@ -33,7 +33,9 @@ following form:
 
 ### The zim export may end prematurely
 
-The export ends when encounters a page without headings or when there is any text before the first heading.
+The export ends abruptly in some cases:
+- when encounters a page without headings or when there is any text before the first heading
+- when there are regexp strings in an article body
 
 ### Wrong format name
 
